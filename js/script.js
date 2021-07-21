@@ -1,32 +1,98 @@
+// Multiplication
+$(document).ready(function(){
+
+  $(".multiplication").click(function(event){
+
+    var number1 = parseInt($("input#add1").val());
+    var number2 = parseInt($("input#add2").val());
+
+    var total = (number1 * number2);
+
+    $(".number1").text(number1);
+
+    $(".number2").text(number2);
+
+    $("#results").text(total);
+
+    $(".results").show();
+
+    event.preventDefault();
+
+  });
+
+});
+
 // Addition
+$(document).ready(function(){
 
-var add = function(number1, number2) {
-    return number1 + number2;
-  };
-  var number1 = parseInt(prompt("(Addition) Enter first number:"))
-  var number2 = parseInt(prompt("(Addition) Enter second number:"))
-  alert(add(number1, number2));
+  $(".addition").click(function(display){
 
-//   Subtraction
-var subtract = function(number1, number2) {
-    return number2 - number1;
-  };
-  var number1 = parseInt(prompt("(Subtraction) Enter first number:"))
-  var number2 = parseInt(prompt("(Subtraction) Enter second number:"))
-  alert(subtract(number1, number2));
+    var number1 = parseInt($("#add1").val());
 
-//   Division
-var divide = function(number1, number2) {
-    return number2 / number1;
-  };
-  var number1 = parseInt(prompt("(Division) Enter first number:"))
-  var number2 = parseInt(prompt("(Division) Enter second number:"))
-  alert(divide(number1, number2));
+    var number2  = parseInt($("#add2").val());
 
-//   Multiplication
-var multiply = function(number1, number2) {
-    return number1 * number2;
-  };
-  var number1 = parseInt(prompt("(Multiplication) Enter first number:"))
-  var number2 = parseInt(prompt("(Multiplication) Enter second number:"))
-  alert(multiply(number1, number2));
+    var total  = (number1 + number2);
+
+    $(".number1").text(number1);
+
+    $(".number2").text(number2);
+
+    $("#results").text(total);
+
+    $(".results").show();
+
+    display.preventDefault();
+
+  });
+
+});
+
+// Subtraction
+$(document).ready(function(){
+
+  $(".subtraction").click(function(display){
+
+    var number1 = parseInt($("#add1").val());
+
+    var number2  = parseInt($("#add2").val());
+
+    var total  = (number1 - number2);
+
+    $(".number1").text(number1);
+
+    $(".number2").text(number2);
+
+    $("#results").text(total);
+
+    $(".results").show();
+
+    display.preventDefault();
+
+  });
+
+});
+
+// Division
+$(document).ready(function(){
+
+  $(".division").click(function(display){
+
+    var number1 = parseInt($("#add1").val());
+
+    var number2  = parseInt($("#add2").val());
+
+    var total  = (number1 / number2);
+
+    $(".number1").text(number1);
+
+    $(".number2").text(number2);
+
+    $("#results").text(total);
+
+    $(".results").show();
+
+    display.preventDefault();
+
+  });
+
+});
