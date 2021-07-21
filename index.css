@@ -1,0 +1,17 @@
+body{
+    width: 100%;
+}
+
+form{
+    width: 50%;
+}
+
+.results{
+    display: none;
+}
+
+.number1, .number2{
+    font-weight: 600;
+    color: seagreen;
+}
+
